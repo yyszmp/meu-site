@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mural da Turma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Mural da Turma</h1>
+    <p>Deixe um recado para sua turma</p>
+
+    <form id="form-recado">
+      <input type="text" id="autor" placeholder="Seu nome" required>
+      <input type="text" id="turma" placeholder="Sua turma (ex: 1A)" required>
+      <textarea id="mensagem" placeholder="Digite seu recado..." required></textarea>
+      <button type="submit">Salvar recado</button>
+    </form>
+
+    <section>
+      <h2>Recados enviados</h2>
+      <div id="lista-recados"></div>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
